@@ -1,1 +1,29 @@
-<p>home works!</p>
+
+<mat-drawer-container class="container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="side">
+      <p class="name">Elaine Molina</p>
+      <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+      <img class="foto" src="/assets/foto.jpg">
+     <div class="label">
+          <label class="bem-vindo">Seja bem-vindo!</label>
+          <label class="descricao">Meu nome é Elaine Molina, sou desenvolvedora</label>
+     </div>
+      <button routerLink="/portifolio" (click)="showFiller = !showFiller" mat-raised-button>
+        Portifólio
+      </button>
+      <button routerLink="/blog" (click)="showFiller = !showFiller" mat-raised-button>
+        Blog
+      </button>
+      <button routerLink="/home" (click)="showFiller = !showFiller" mat-raised-button>
+        elainemolina10@gmail.com
+      </button>
+    </mat-drawer>
+  
+    <div class="sidenav-content">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        Toggle sidenav
+      </button>
+    </div>
+  
+  </mat-drawer-container>
+  

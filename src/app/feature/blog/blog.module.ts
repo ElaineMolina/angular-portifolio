@@ -5,6 +5,8 @@ import { BlogRoutingModule } from './blog-routing.module';
 import { BlogComponent } from './components/blog/blog.component';
 import { BlogPageComponent } from './components/pages/blog-page/blog-page.component';
 
+import { MatSidenavModule } from '@angular/material/sidenav';
+
 
 @NgModule({
   declarations: [
@@ -14,6 +16,7 @@ import { BlogPageComponent } from './components/pages/blog-page/blog-page.compon
   imports: [
     CommonModule,
     BlogRoutingModule,
+    MatSidenavModule
   ],
   exports:[
     BlogPageComponent

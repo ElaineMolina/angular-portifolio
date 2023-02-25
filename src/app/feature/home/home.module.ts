@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    MatSidenavModule
   ],
   exports: [
     HomePageComponent

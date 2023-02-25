@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { PortifolioComponent } from './components/portifolio/portifolio.component';
 import { PortifolioPageComponent } from './pages/portifolio-page/portifolio-page.component';
 import { PortifolioRoutingModule } from './portifolio-routing.module';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 
 @NgModule({
@@ -13,7 +14,9 @@ import { PortifolioRoutingModule } from './portifolio-routing.module';
   ],
   imports: [
     CommonModule,
-    PortifolioRoutingModule
+    PortifolioRoutingModule,
+    MatSidenavModule
+
   ],
   exports: [
     PortifolioPageComponent
